@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: jbundle-util-webapp-webstart-code-${project.version}.jar
+Main-Class: ${package}.App

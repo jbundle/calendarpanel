@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>Welcome</title>
+    <author email="dev@maven.apache.org">The Maven Team</author>
+  </properties>
+
+  <body>
+    <section name="Java Swing Calendar Panel!">
+		<p>
+		The design is pretty simple. The calendar model just extends the java swing TableModel requiring
+		a few extra items such as starting date and description. If you are used to using TableModel, programming
+		to this API will be pretty easy.
+		</p>
+		<p>
+		In the org.jbundle.thin.base.screen.calendar.model package you will find the basic data model.
+        </p>
+        <p>
+        The CalendarModel is the data model and AbstractCalendarModel is the skeleton implementation.
+		These classes extend TableModel and AbstractTableModel adding a few methods that the calendar
+		needs. Typically, your Calendar Model will extend CachedCalendarModel. This class will reduce the
+		thrash significantly on your calendar data that comes from the TableModel. You'll want to use this model
+		if you persist your data.
+        </p>
+        <p>
+        CalendarItem is the interface to your data class. Just implement this model and return the
+		few items in this interface such as start date, end data, and description.
+        </p>
+        <p>
+        The event processing model is the same as the one in the swing model, with the addition
+		of one event (in the +.event package) to notify you of a calendar item selection.
+		</p>
+		<p>
+		If you find any bugs or have improved the code or documentation, please ask to join this project.
+		I definitely appreciate any help I can get. Remember, you don't need my permission to mess with the
+		source code. If you can't get to the source repository, remember all the source is available from Maven.
+        </p>
+        <p>
+        If you ask to join this project, you're in!
+		</p>
+		<p>
+		Thanks,
+		<br/><a href="mailto:don@donandann.com">Don</a>
+        </p>
+        <p>
+		<a href="../apidocs/index.html">Java docs</a>
+		</p>
+    </section>
+  </body>
+</document>

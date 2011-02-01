@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>tourgeek demo</display-name>
+  <description>tourgeek demo www pages</description>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+	<servlet>
+		<servlet-name>JnlpDownloadServlet</servlet-name>
+		<servlet-class>
+			jnlp.sample.servlet.JnlpDownloadServlet
+		</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>JnlpDownloadServlet</servlet-name>
+		<url-pattern>*.jnlp</url-pattern>
+	</servlet-mapping>
+    <servlet-mapping>
+      <servlet-name>JnlpDownloadServlet</servlet-name>
+      <url-pattern>*.jar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+      <servlet-name>JnlpDownloadServlet</servlet-name>
+      <url-pattern>*.gz</url-pattern>
+    </servlet-mapping>
+	<mime-mapping>
+		<extension>jnlp</extension>
+		<mime-type>application/x-java-jnlp-file</mime-type>
+	</mime-mapping>
+  <!-- 
+    <mime-mapping>
+      <extension>jar</extension>
+      <mime-type>application/java-archive</mime-type>
+    </mime-mapping>	
+	<mime-mapping>
+		<extension>gz</extension>
+		<mime-type>application/x-java-pack200</mime-type>
+	</mime-mapping>
+     -->
+	
+</web-app>

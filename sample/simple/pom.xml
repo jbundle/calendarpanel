@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jbundle.util.calendarpanel</groupId>
+    <artifactId>jbundle-util-calendarpanel-sample-reactor</artifactId>
+    <version>0.8.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>org.jbundle.util.calendarpanel.sample.simple</artifactId>
+  <name>jbundle-util-calendarpanel-sample-simple</name>
+  <packaging>bundle</packaging>
+
+  <properties>
+    <jbundle.package>org.jbundle.thin.base.screen.calendar.sample.simple</jbundle.package>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jbundle.util.calendarpanel</groupId>
+      <artifactId>org.jbundle.util.calendarpanel</artifactId>
+      <version>0.8.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>  <!-- Lets you run your app standalone by typing exec:java -->
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>${exec-maven-pluginVersion}</version>
+        <executions>
+          <execution>
+            <phase>run</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+            <mainClass>org.jbundle.thin.base.screen.calendar.sample.simple.CalendarTestApplet</mainClass> <!-- These properties are declared in my parent pom (jbundle-util-webapp-webstart) -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+      
+</project>

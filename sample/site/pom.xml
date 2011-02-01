@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jbundle.util.calendarpanel</groupId>
+    <artifactId>jbundle-util-calendarpanel-sample-reactor</artifactId>
+    <version>0.8.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>jbundle-util-calendarpanel-sample-site-reactor</artifactId>
+
+  <packaging>pom</packaging>
+  <name>jbundle-util-calendarpanel-sample-site-parent - site</name>
+
+  <properties>
+    <mainClass>org.jbundle.thin.base.screen.calendar.sample.simple.CalendarTestApplet</mainClass>
+  </properties>
+
+  <modules>
+    <module>site</module>
+    <module>jnlp</module>
+  </modules>
+</project>

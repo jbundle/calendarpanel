@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>Welcome</title>
+    <author email="dev@maven.apache.org">The Maven Team</author>
+  </properties>
+
+  <body>
+    <section name="Java Swing Calendar Panel!">
+      <p>
+        
+        <script src="http://java.com/js/deployJava.js"></script>
+
+The Java Swing Calendar Panel is a calendar component for your java swing applications. Here it is:
+<script>
+<![CDATA[
+var attributes = { code:'${mainClass}.class', width:'100%', height:'300', archive:'jbundle-calendarpanel-sample-site-code-${project.version}.jar', name:'${project.artifactId}'} ; 
+var parameters = {jnlp_href: './jnlp/docs/launch.jnlp', draggable:'true'} ; 
+deployJava.runApplet(attributes, parameters, '1.6'); 
+]]>
+</script>
+</p>
+
+<p>
+Try this simple applet. The top panel is the calendar panel. Try dragging the starting
+and ending icons around to change the calendar times. Try changing the information in the bottom left
+panel and notice the model responds to the changes. (Those cool calendar popup buttons came from the
+<a href="/jcalendarbutton">JCalendarButton project</a>)
+The bottom center panel shows how the
+calendar model appears in a swing JTable without any extra coding. The right panel is a thumbnail
+version of this component. Notice that it also responds to model changes and drag and drop actions.
+</p>
+<hr/>
+
+<p>
+To include Calendar Panel in your <a href="http://maven.apache.org/">Maven</a> projects, just add the following dependency to your project:
+</p>
+<p>
+<code>
+&lt;dependency&gt;<br/>
+&#160;&#160;        &lt;groupId&gt;${project.groupId}&lt;/groupId&gt;<br/>
+&#160;&#160;        &lt;artifactId&gt;${project.artifactId}&lt;/artifactId&gt;<br/>
+&#160;&#160;        &lt;version&gt;${project.version}&lt;/version&gt;<br/>
+    &lt;/dependency&gt;<br/>
+</code>
+</p>
+
+<p>
+This Calendar Panel is already configured as an <a href="http://www.osgi.org">OSGi</a> bundle.
+To use it in your OSGi project, just include this in the
+manifest of the bundles that will be using Calendar Panel.
+Remember to install the Calendar Panel jar in your OSGi environment.
+</p>
+<p>
+<code>
+OBR Repository index:<br/>
+${project.organization.url}/${OBRRepositoryIndex}<br/>
+Manifest import:<br/>
+Import-Package: ${project.groupId}.calendar;resolution:=optional;version=${project.version}
+</code>
+</p>
+
+<p>
+I think you will find that Calendar Panel easy to include in your project.
+The calendar model extends the java swing TableModel requiring
+a few extra items such as starting date and description.
+<a href="technical.html">Here is the technical information.</a>
+</p>
+
+<p>
+If you use Calendar Panel, click here: <script type="text/javascript" src="http://www.ohloh.net/p/calendarpanel/widgets/project_users_logo.js"></script>
+</p>
+
+    </section>
+  </body>
+</document>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jbundle.util.calendarpanel</groupId>
+    <artifactId>jbundle-util-calendarpanel-sample-site-reactor</artifactId>
+    <version>0.8.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>org.jbundle.util.calendarpanel.sample.site.code</artifactId>
+
+  <name>jbundle-util-calendarpanel-sample-site-code</name>
+  <packaging>bundle</packaging>
+  <properties>
+    <jbundle.package>org.jbundle.thin.base.screen.calendar.sample.site</jbundle.package>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>	<!-- Lets you run your app standalone by typing exec:java -->
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>${exec-maven-pluginVersion}</version>
+        <executions>
+          <execution>
+          	<phase>run</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+            <mainClass>org.jbundle.util.calendarpanel.sample.site.CalendarTestApplet</mainClass>	<!-- These properties are declared in my parent pom (jbundle-util-webapp-webstart) -->
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>${maven-jar-pluginVersion}</version>
+        <configuration>
+          <archive>
+            <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+          </archive>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>${maven-bundle-pluginVersion}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+            <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+            <Export-Package>org.jbundle.util.calendarpanel.sample.site;version=${project.version}</Export-Package>
+            <Import-Package>*;resolution:=optional,</Import-Package>
+            <Bundle-Version>${project.version}</Bundle-Version>
+            <Main-Class>org.jbundle.util.calendarpanel.sample.site.App</Main-Class>	<!-- Standalone support -->
+          </instructions>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jbundle.util.calendarpanel</groupId>
+      <artifactId>org.jbundle.util.calendarpanel</artifactId>
+      <version>0.8.1-SNAPSHOT</version>
+    </dependency>
+	<dependency>
+	   <groupId>org.jbundle.util.jcalendarbutton</groupId>
+	   <artifactId>org.jbundle.util.jcalendarbutton</artifactId>
+	   <version>1.5.3-SNAPSHOT</version>
+	</dependency>
+  </dependencies>
+
+</project>

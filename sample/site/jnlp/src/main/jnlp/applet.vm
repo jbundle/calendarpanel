@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+  spec="1.0+"
+  codebase="$$context/docs/"
+  href="${outputFile}">
+  <information>
+    <title>${project.Name}</title>
+    <vendor>${project.Organization.Name}</vendor>
+    <homepage href="${project.url}"/>
+    <description kind="short">${project.description}</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <java version="1.6+"/>
+	${dependencies}
+  </resources>
+	  <application-desc main-class="${mainClass}"></application-desc>
+</jnlp>
