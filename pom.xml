@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jbundle.config</groupId>
     <artifactId>jbundle-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <relativePath>../../jbundle-parent</relativePath>
   </parent>
 
@@ -17,14 +17,9 @@
   <packaging>pom</packaging>
   <name>jbundle-util-calendarpanel-root - project</name>
 
-  <scm>
-    <!-- url>http://calendarpanel.hg.sourceforge.net/hgweb/calendarpanel/jbundle-calendarpanel-root</url>
-    <connection>scm:hg:http://calendarpanel.hg.sourceforge.net:8000/hgroot/calendarpanel/jbundle-calendarpanel-root</connection>
-    <developerConnection>scm:hg:ssh://doncorley@calendarpanel.hg.sourceforge.net/hgroot/calendarpanel/jbundle-calendarpanel-root</developerConnection -->
-    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/jbundle/util/calendarpanel</url>
-    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/jbundle/util/calendarpanel</connection>
-    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/jbundle/util/calendarpanel</developerConnection>
-  </scm>
+  <properties>
+    <jbundleScmPath>util/calendarpanel</jbundleScmPath>
+  </properties>
 
   <modules>
     <module>calendarpanel</module>
