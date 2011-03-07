@@ -30,7 +30,6 @@
       <plugin>  <!-- Lets you run your app standalone by typing exec:java -->
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>${exec-maven-pluginVersion}</version>
         <executions>
           <execution>
             <phase>run</phase>

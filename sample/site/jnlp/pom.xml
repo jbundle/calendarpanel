@@ -17,7 +17,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
-        <version>${maven-war-pluginVersion}</version>
         <configuration>
           <webResources>
             <resource>
@@ -32,7 +31,6 @@
       <plugin>
         <groupId>org.codehaus.mojo.webstart</groupId>
         <artifactId>webstart-maven-plugin</artifactId>
-        <version>${webstart-maven-pluginVersion}</version>
         <executions>
           <execution>
             <phase>process-resources</phase>
@@ -80,7 +78,6 @@
       <plugin>
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
-        <version>${jetty-maven-pluginVersion}</version>
         <configuration>
           <scanIntervalSeconds>10</scanIntervalSeconds>
           <webAppConfig>
@@ -99,7 +96,6 @@
     <dependency>
       <groupId>org.codehaus.mojo.webstart</groupId>
       <artifactId>webstart-jnlp-servlet</artifactId>
-      <version>${webstart-jnlp-servletVersion}</version>
     </dependency>
   </dependencies>
 
