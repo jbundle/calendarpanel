@@ -12,7 +12,7 @@
 
   <groupId>org.jbundle.util.calendarpanel</groupId>
   <artifactId>jbundle-util-calendarpanel-project</artifactId>
-  <version>0.8.1-SNAPSHOT</version>
+  <version>0.8.1</version>
 
   <packaging>pom</packaging>
   <name>jbundle-util-calendarpanel-root - project</name>
