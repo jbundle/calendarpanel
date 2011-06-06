@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jbundle.util.calendarpanel</groupId>
     <artifactId>jbundle-util-calendarpanel-sample-reactor</artifactId>
-    <version>0.8.1</version>
+    <version>0.8.2-SNAPSHOT</version>
   </parent>
 
   <artifactId>jbundle-util-calendarpanel-sample-site-reactor</artifactId>
