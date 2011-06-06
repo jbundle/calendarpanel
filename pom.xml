@@ -21,6 +21,12 @@
     <jbundleScmPath>util/calendarpanel</jbundleScmPath>
   </properties>
 
+  <scm>
+    <url>https://github.com/jbundle/calendarpanel</url>
+    <connection>scm:git:git://github.com/jbundle/calendarpanel.git</connection>
+    <developerConnection>scm:git:git@github.com:jbundle/calendarpanel.git</developerConnection>
+  </scm>
+
   <modules>
     <module>calendarpanel</module>
     <module>sample</module>
