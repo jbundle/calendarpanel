@@ -72,7 +72,7 @@
 	<dependency>
 	   <groupId>org.jbundle.util.jcalendarbutton</groupId>
 	   <artifactId>org.jbundle.util.jcalendarbutton</artifactId>
-	   <version>1.5.3-SNAPSHOT</version>
+	   <version>${jbundle-jcalendarbuttonVersion}</version>
 	</dependency>
   </dependencies>
 
