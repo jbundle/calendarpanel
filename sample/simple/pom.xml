@@ -14,7 +14,7 @@
   <packaging>bundle</packaging>
 
   <properties>
-    <jbundle.package>org.jbundle.thin.base.screen.calendar.sample.simple</jbundle.package>
+    <jbundlePackage>org.jbundle.thin.base.screen.calendar.sample.simple</jbundlePackage>
   </properties>
 
   <dependencies>
