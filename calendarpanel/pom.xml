@@ -13,11 +13,15 @@
   <artifactId>org.jbundle.util.calendarpanel</artifactId>
   <packaging>bundle</packaging>
   <name>jbundle-util-calendarpanel - Calendar panel</name>
+  
+  <properties>
+    <mainClass>org.jbundle.thin.base.screen.calendar.sample.site.CalendarTestApplet</mainClass>
+  </properties>
 
   <distributionManagement>
     <site>
       <id>jbundle.org</id>
-      <url>scp://www.jbundle.org://space/web/jbundle/calendarpanel</url>
+      <url>scp://www.jbundle.org://space/web/calendarpanel</url>
     </site>
   </distributionManagement>
 
