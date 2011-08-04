@@ -772,7 +772,7 @@ public class CalendarPanel extends JComponent
          */
         public void focusLost(FocusEvent e)
         {
-System.out.println("-----------------LOST FOCUS");
+//System.out.println("-----------------LOST FOCUS");
             m_component.removeFocusListener(this);
             Component comp = e.getOppositeComponent();
             while (comp != null)
