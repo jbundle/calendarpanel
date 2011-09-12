@@ -2,8 +2,9 @@
  * ProductTransferable.java
  *
  * Created on August 17, 2004, 1:36 AM
- */
 
+ * Copyright © 2011 jbundle.org. All rights reserved.
+ */
 package org.jbundle.util.calendarpanel.dnd;
 
 import java.awt.datatransfer.Transferable;
