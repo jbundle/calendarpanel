@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jbundle.util.calendarpanel</groupId>
     <artifactId>jbundle-util-calendarpanel-sample-site-reactor</artifactId>
-    <version>0.8.2-SNAPSHOT</version>
+    <version>0.8.2</version>
   </parent>
 
   <artifactId>org.jbundle.util.calendarpanel.sample.site.code</artifactId>
@@ -67,12 +67,12 @@
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel</artifactId>
-      <version>0.8.2-SNAPSHOT</version>
+      <version>0.8.2</version>
     </dependency>
 	<dependency>
 	   <groupId>org.jbundle.util.jcalendarbutton</groupId>
 	   <artifactId>org.jbundle.util.jcalendarbutton</artifactId>
-	   <version>${jbundle-jcalendarbuttonVersion}</version>
+	   <version>1.5.4</version>
 	</dependency>
   </dependencies>
 
