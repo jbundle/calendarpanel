@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jbundle.util.calendarpanel</groupId>
     <artifactId>jbundle-util-calendarpanel-project</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
   </parent>
 
   <!-- This module is stand-alone and has NO dependencies - The parent POMs are only for deployment, etc. -->
