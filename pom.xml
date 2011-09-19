@@ -6,13 +6,13 @@
   <parent>
     <groupId>org.jbundle.config</groupId>
     <artifactId>jbundle-parent</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.9-SNAPSHOT</version>
     <relativePath>../../jbundle-parent</relativePath>
   </parent>
 
   <groupId>org.jbundle.util.calendarpanel</groupId>
   <artifactId>jbundle-util-calendarpanel-project</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>jbundle-util-calendarpanel-root - project</name>
