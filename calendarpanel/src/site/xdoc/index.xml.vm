@@ -62,8 +62,8 @@ Import-Package: ${project.groupId}.calendar;resolution:=optional;version=${proje
 </p>
 
 <p>
-I think you will find that Calendar Panel easy to include in your project.
-The calendar model extends the java swing TableModel requiring
+Calendar Panel is easy to include in your project.
+The calendar model extends the java swing TableModel only requiring
 a few extra items such as starting date and description.
 <a href="technical.html">Here is the technical information.</a>
 </p>
