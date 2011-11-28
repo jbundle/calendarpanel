@@ -94,8 +94,8 @@
   
   <dependencies>
     <dependency>
-      <groupId>org.codehaus.mojo.webstart</groupId>
-      <artifactId>webstart-jnlp-servlet</artifactId>
+        <groupId>org.jbundle.util.osgi.wrapped</groupId>
+        <artifactId>org.jbundle.util.osgi.wrapped.jnlp.sample</artifactId>
     </dependency>
   </dependencies>
 
