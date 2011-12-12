@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jbundle.util.calendarpanel</groupId>
     <artifactId>jbundle-util-calendarpanel-sample-reactor</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
   </parent>
 
   <artifactId>org.jbundle.util.calendarpanel.sample.simple</artifactId>
@@ -17,7 +17,7 @@
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
