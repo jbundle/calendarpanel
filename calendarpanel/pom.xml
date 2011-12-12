@@ -15,7 +15,7 @@
   <name>jbundle-util-calendarpanel - Calendar panel</name>
   
   <properties>
-    <mainClass>org.jbundle.thin.base.screen.calendar.sample.site.CalendarTestApplet</mainClass>
+    <mainClass>org.jbundle.util.calendarpanel.sample.rich.CalendarTestApplet</mainClass>
   </properties>
 
   <distributionManagement>

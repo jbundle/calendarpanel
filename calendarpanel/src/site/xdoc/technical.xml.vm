@@ -14,7 +14,7 @@
 		to this API will be pretty easy.
 		</p>
 		<p>
-		In the org.jbundle.thin.base.screen.calendar.model package you will find the basic data model.
+		In the ${project.groupId}.model package you will find the basic data model.
         </p>
         <p>
         The CalendarModel is the data model and AbstractCalendarModel is the skeleton implementation.

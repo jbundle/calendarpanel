@@ -15,7 +15,8 @@
 
   <modules>
     <module>simple</module>
-    <module>site</module>
+    <module>rich</module>
+    <module>jnlp</module>
   </modules>
 
 </project>

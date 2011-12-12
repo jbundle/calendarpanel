@@ -13,15 +13,17 @@
         <script src="http://java.com/js/deployJava.js"></script>
 
 The Java Swing Calendar Panel is a calendar component for your java swing applications. Here it is:
-<script>
+<!-- script>
 <![CDATA[
-var attributes = { code:'${mainClass}.class', width:'100%', height:'300', archive:'jbundle-calendarpanel-sample-site-code-${project.version}.jar', name:'${project.artifactId}'} ; 
+var attributes = { code:'${mainClass}.class', width:'100%', height:'300', archive:'org.jbundle.util.calendarpanel.sample.rich-${project.version}.jar', name:'${project.artifactId}'} ; 
 var parameters = {jnlp_href: './jnlp/docs/launch.jnlp', draggable:'true'} ; 
 deployJava.runApplet(attributes, parameters, '1.6'); 
 ]]>
-</script>
+</script -->
 </p>
-
+    <iframe src ="/webstart/docs/applet.html?appletClass=org.jbundle.util.calendarpanel.sample.rich.CalendarTestApplet" width="100%" height="350">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
 <p>
 Try this simple applet. The top panel is the calendar panel. Try dragging the starting
 and ending icons around to change the calendar times. Try changing the information in the bottom left
