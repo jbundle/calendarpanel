@@ -21,7 +21,7 @@
   <distributionManagement>
     <site>
       <id>jbundle.org</id>
-      <url>scp://www.jbundle.org://space/web/calendarpanel</url>
+      <url>scp://www.jbundle.org://space/web/jbundle/calendarpanel</url>
     </site>
   </distributionManagement>
 
