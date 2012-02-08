@@ -3,7 +3,6 @@
  */
 package org.jbundle.util.calendarpanel.model;
 
-import java.awt.Color;
 import java.util.Date;
 
 import javax.swing.ImageIcon;
@@ -44,11 +43,11 @@ public interface CalendarItem
     /**
      * Get the highlight color (optional).
      */
-    public Color getHighlightColor();
+    public int getHighlightColor();
     /**
      * Get the highlight color (optional).
      */
-    public Color getSelectColor();
+    public int getSelectColor();
     /**
      * Change the start time of this service.
      */

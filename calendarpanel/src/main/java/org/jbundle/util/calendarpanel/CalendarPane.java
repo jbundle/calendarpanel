@@ -253,8 +253,8 @@ public class CalendarPane extends JPanel
             return;
         if (iXStartService > rect.width)
             return;
-        Color colorHighlight = itemCache.getItem().getHighlightColor();
-        Color colorSelect = itemCache.getItem().getSelectColor();
+        Color colorHighlight = new Color(itemCache.getItem().getHighlightColor());  // TODO use old color instead of creating an object
+        Color colorSelect = new Color(itemCache.getItem().getSelectColor());        // if possible
         if (image != null) if (iXStartService + image.getIconWidth() >= 0)
         {
             label = this.addIcon(itemCache, image, iXStartService, insets.top + y, colorHighlight, colorSelect, CalendarConstants.START_ICON, m_kstrStartIconTip);

@@ -3,7 +3,6 @@
  */
 package org.jbundle.util.calendarpanel.sample.rich;
 
-import java.awt.Color;
 import java.util.Date;
 
 import javax.swing.ImageIcon;
@@ -24,14 +23,14 @@ public class CalendarProduct extends Object
     protected ImageIcon m_iconStart = null;
     protected ImageIcon m_iconEnd = null;
     protected String m_strMeals = null;
-    protected Color m_colorHighlight = null;
-    protected Color m_colorSelect = null;
+    protected int m_colorHighlight = 0;
+    protected int m_colorSelect = 0;
     protected int m_iStatus = 0;
 
     /**
      * Constructor.
      */
-    public CalendarProduct(CalendarModel model, Date startTime, Date endTime, String description, ImageIcon iconStart, ImageIcon iconEnd, String strMeals, Color colorHighlight, Color colorSelect, int iStatus)
+    public CalendarProduct(CalendarModel model, Date startTime, Date endTime, String description, ImageIcon iconStart, ImageIcon iconEnd, String strMeals, int colorHighlight, int colorSelect, int iStatus)
     {
         super();
         this.init(model, startTime, endTime, description, iconStart, iconEnd, strMeals, colorHighlight, colorSelect, iStatus);
@@ -40,7 +39,7 @@ public class CalendarProduct extends Object
     /**
      * Constructor.
      */
-    public void init(CalendarModel model, Date startTime, Date endTime, String description, ImageIcon iconStart, ImageIcon iconEnd, String strMeals, Color colorHighlight, Color colorSelect, int iStatus)
+    public void init(CalendarModel model, Date startTime, Date endTime, String description, ImageIcon iconStart, ImageIcon iconEnd, String strMeals, int colorHighlight, int colorSelect, int iStatus)
     {
         m_startTime = startTime;
         m_endTime = endTime;
@@ -127,14 +126,14 @@ public class CalendarProduct extends Object
     /**
      * Highlight color (optional).
      */
-    public Color getHighlightColor()
+    public int getHighlightColor()
     {
         return m_colorHighlight;
     }
     /**
      * Highlight color (optional).
      */
-    public Color getSelectColor()
+    public int getSelectColor()
     {
         return m_colorSelect;
     }
