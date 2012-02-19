@@ -3,7 +3,7 @@
  *
  * Created on September 27, 2000, 5:29 AM
  
- * Copyright © 2011 jbundle.org. All rights reserved.
+ * Copyright © 2012 jbundle.org. All rights reserved.
  */
 package org.jbundle.util.calendarpanel.event;
 
