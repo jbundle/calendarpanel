@@ -6,6 +6,7 @@ package org.jbundle.util.calendarpanel;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Insets;
 import java.awt.Rectangle;
 import java.awt.dnd.DropTarget;
@@ -227,19 +228,21 @@ public class CalendarPane extends JPanel
         int iWidthDescription = this.getCalendarPanel().getFontMetrics().stringWidth(strDescription);
     // First, add the (optional) start icon
         iXStartService += insets.left;
-        ImageIcon image = null;
+        ImageIcon imageStart = null;
         ImageIcon imageEnd = null;
         if (calendarPanel.isIcons())
         {
-            image = (ImageIcon)itemCache.getItem().getIcon(CalendarConstants.START_ICON);
-            if (image != null) if (image.getIconWidth() < 0)
-                image = null;
-            imageEnd = (ImageIcon)itemCache.getItem().getIcon(CalendarConstants.END_ICON);
+            Object image = itemCache.getItem().getIcon(CalendarConstants.START_ICON);
+            imageStart = (image instanceof Image) ? new ImageIcon((Image)image) : (ImageIcon)image;
+            if (imageStart != null) if (imageStart.getIconWidth() < 0)
+                imageStart = null;
+            image = itemCache.getItem().getIcon(CalendarConstants.END_ICON);
+            imageEnd = (image instanceof Image) ? new ImageIcon((Image)image) : (ImageIcon)image;
             if (imageEnd != null) if (imageEnd.getIconWidth() < 0)
                 imageEnd = null;
         }
         int iWidthService = iXEndService - iXStartService;
-        int iWidthImages = (image == null ? 0 : image.getIconWidth()) + (imageEnd == null ? 0 : imageEnd.getIconWidth());
+        int iWidthImages = (imageStart == null ? 0 : imageStart.getIconWidth()) + (imageEnd == null ? 0 : imageEnd.getIconWidth());
         if ((iWidthDescription + iWidthImages < 5) && (iWidthService < 5))
             iWidthService = 5;      // Minimum length in pixels
         int iTotalWidth = Math.max(iWidthDescription + iWidthImages, iWidthService);
@@ -255,19 +258,20 @@ public class CalendarPane extends JPanel
             return;
         Color colorHighlight = new Color(itemCache.getItem().getHighlightColor());  // TODO use old color instead of creating an object
         Color colorSelect = new Color(itemCache.getItem().getSelectColor());        // if possible
-        if (image != null) if (iXStartService + image.getIconWidth() >= 0)
+        if (imageStart != null) if (iXStartService + imageStart.getIconWidth() >= 0)
         {
-            label = this.addIcon(itemCache, image, iXStartService, insets.top + y, colorHighlight, colorSelect, CalendarConstants.START_ICON, m_kstrStartIconTip);
+            label = this.addIcon(itemCache, imageStart, iXStartService, insets.top + y, colorHighlight, colorSelect, CalendarConstants.START_ICON, m_kstrStartIconTip);
             ((JUnderlinedLabel)label).setStartRound(true);  // Round the first label
         }
-        if (image != null)
-            iXStartService += image.getIconWidth();
+        if (imageStart != null)
+            iXStartService += imageStart.getIconWidth();
         // Make sure the underlined label has all the "flashing/cycling" icons that the model contains.
-        if (image != null) if (label != null)
+        if (imageStart != null) if (label != null)
         {
             for (int iIndex = CalendarConstants.START_ICON + 1; iIndex < CalendarConstants.END_ICON; iIndex++)
             {
-                ImageIcon icon = (ImageIcon)itemCache.getItem().getIcon(iIndex);
+                Object image = itemCache.getItem().getIcon(iIndex);
+                ImageIcon icon = (image instanceof Image) ? new ImageIcon((Image)image) : (ImageIcon)image;
                 if (icon != null)
                 {
                     ((JUnderlinedLabel)label).addIcon(icon, iIndex - CalendarConstants.START_ICON);
@@ -282,7 +286,7 @@ public class CalendarPane extends JPanel
             iXStartService += iWidthStartDesc;
     // Next, add the (optional) end icon
         if (iXStartService <= rect.width)
-            if (imageEnd != null) if (iXStartService + image.getIconWidth() >= 0)
+            if (imageEnd != null) if (iXStartService + imageStart.getIconWidth() >= 0)
                 label = this.addIcon(itemCache, imageEnd, iXStartService, insets.top + y, colorHighlight, colorSelect, CalendarConstants.END_ICON, m_kstrEndIconTip);
         if (imageEnd != null) 
             iXStartService += imageEnd.getIconWidth();

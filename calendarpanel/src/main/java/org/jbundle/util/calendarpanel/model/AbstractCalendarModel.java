@@ -3,6 +3,8 @@
  */
 package org.jbundle.util.calendarpanel.model;
 
+import java.awt.Image;
+
 import javax.swing.ImageIcon;
 import javax.swing.event.EventListenerList;
 import javax.swing.table.AbstractTableModel;
@@ -77,7 +79,13 @@ public abstract class AbstractCalendarModel extends AbstractTableModel
     {
         CalendarItem item = this.getItem(rowIndex);
         if (columnIndex == CalendarModel.ICON)
-            return item.getIcon(CalendarConstants.START_ICON);
+        {
+            Object image = item.getIcon(CalendarConstants.START_ICON);
+            if (image instanceof Image)
+                return new ImageIcon((Image)image);
+            else
+                return image;
+        }
         if (columnIndex == CalendarModel.START_TIME)
             return item.getStartDate();
         if (columnIndex == CalendarModel.DESCRIPTION)
