@@ -231,10 +231,10 @@ public class CalendarPane extends JPanel
         ImageIcon imageEnd = null;
         if (calendarPanel.isIcons())
         {
-            image = itemCache.getItem().getIcon(CalendarConstants.START_ICON);
+            image = (ImageIcon)itemCache.getItem().getIcon(CalendarConstants.START_ICON);
             if (image != null) if (image.getIconWidth() < 0)
                 image = null;
-            imageEnd = itemCache.getItem().getIcon(CalendarConstants.END_ICON);
+            imageEnd = (ImageIcon)itemCache.getItem().getIcon(CalendarConstants.END_ICON);
             if (imageEnd != null) if (imageEnd.getIconWidth() < 0)
                 imageEnd = null;
         }
@@ -267,7 +267,7 @@ public class CalendarPane extends JPanel
         {
             for (int iIndex = CalendarConstants.START_ICON + 1; iIndex < CalendarConstants.END_ICON; iIndex++)
             {
-                ImageIcon icon = itemCache.getItem().getIcon(iIndex);
+                ImageIcon icon = (ImageIcon)itemCache.getItem().getIcon(iIndex);
                 if (icon != null)
                 {
                     ((JUnderlinedLabel)label).addIcon(icon, iIndex - CalendarConstants.START_ICON);

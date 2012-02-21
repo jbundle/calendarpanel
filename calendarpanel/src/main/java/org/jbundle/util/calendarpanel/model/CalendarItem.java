@@ -5,8 +5,6 @@ package org.jbundle.util.calendarpanel.model;
 
 import java.util.Date;
 
-import javax.swing.ImageIcon;
-
 public interface CalendarItem
 {
     /**
@@ -39,7 +37,7 @@ public interface CalendarItem
     /**
      * Get the icon (opt).
      */
-    public ImageIcon getIcon(int iIconType);
+    public Object getIcon(int iIconType);
     /**
      * Get the highlight color (optional).
      */
@@ -59,7 +57,7 @@ public interface CalendarItem
     /**
      * Set the icon (opt).
      */
-    public void setIcon(ImageIcon icon, int iIconType);
+    public void setIcon(Object icon, int iIconType);
     /**
      * Get the display window for this object.
      */
