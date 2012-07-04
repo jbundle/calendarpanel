@@ -1,12 +1,15 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package org.jbundle.util.calendarpanel.model;
+package org.jbundle.util.calendarpanel.model.swing;
 
 import java.util.Date;
 import java.util.Vector;
 
 import javax.swing.ImageIcon;
+
+import org.jbundle.util.calendarpanel.model.CalendarItem;
+import org.jbundle.util.calendarpanel.model.CalendarModel;
 
 
 /**

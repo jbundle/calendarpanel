@@ -4,11 +4,10 @@
 package org.jbundle.util.calendarpanel.model;
 
 import java.util.Date;
+import java.util.EventListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.table.TableModel;
-
-import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
 
 
 /**
@@ -90,11 +89,11 @@ public interface CalendarModel extends TableModel
     /**
      * Add a listener to my list.
      */
-    public void addMySelectionListener(MyListSelectionListener l);
+    public void addMySelectionListener(EventListener l);
     /**
      * Remove a listener from my list.
      */
-    public void removeMySelectionListener(MyListSelectionListener l);
+    public void removeMySelectionListener(EventListener l);
     /**
      * Notify the listeners of the rows being updated.
      */

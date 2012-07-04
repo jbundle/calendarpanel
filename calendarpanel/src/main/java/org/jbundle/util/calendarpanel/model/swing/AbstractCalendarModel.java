@@ -1,9 +1,10 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package org.jbundle.util.calendarpanel.model;
+package org.jbundle.util.calendarpanel.model.swing;
 
 import java.awt.Image;
+import java.util.EventListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.event.EventListenerList;
@@ -11,6 +12,9 @@ import javax.swing.table.AbstractTableModel;
 
 import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
 import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
+import org.jbundle.util.calendarpanel.model.CalendarConstants;
+import org.jbundle.util.calendarpanel.model.CalendarItem;
+import org.jbundle.util.calendarpanel.model.CalendarModel;
 
 
 /**
@@ -114,16 +118,16 @@ public abstract class AbstractCalendarModel extends AbstractTableModel
     /**
      * Add a listener to my list.
      */
-    public void addMySelectionListener(MyListSelectionListener l)
+    public void addMySelectionListener(EventListener l)
     {
-        listenerList.add(MyListSelectionListener.class, l);
+        listenerList.add(MyListSelectionListener.class, (MyListSelectionListener)l);
     }
     /**
      * Remove a listener from my list.
      */
-    public void removeMySelectionListener(MyListSelectionListener l)
+    public void removeMySelectionListener(EventListener l)
     {
-        listenerList.remove(MyListSelectionListener.class, l);
+        listenerList.remove(MyListSelectionListener.class, (MyListSelectionListener)l);
     }
     /**
      * Notify all listeners that have registered interest for

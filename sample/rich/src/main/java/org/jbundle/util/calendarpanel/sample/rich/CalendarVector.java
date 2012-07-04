@@ -9,7 +9,7 @@ import java.util.Vector;
 import javax.swing.ImageIcon;
 
 import org.jbundle.util.calendarpanel.CalendarPanel;
-import org.jbundle.util.calendarpanel.model.AbstractCalendarModel;
+import org.jbundle.util.calendarpanel.model.swing.AbstractCalendarModel;
 import org.jbundle.util.calendarpanel.model.CalendarItem;
 import org.jbundle.util.calendarpanel.model.CalendarModel;
 

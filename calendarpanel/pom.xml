@@ -9,15 +9,23 @@
     <version>1.1.1-SNAPSHOT</version>
   </parent>
 
-  <!-- This module is stand-alone and has NO dependencies - The parent POMs are only for deployment, etc. -->
+  <!-- This module is stand-alone and has 1 dependencies - The parent POMs are only for deployment, etc. -->
   <artifactId>org.jbundle.util.calendarpanel</artifactId>
   <packaging>bundle</packaging>
   <name>jbundle-util-calendarpanel - Calendar panel</name>
   
   <properties>
-    <mainClass>org.jbundle.util.calendarpanel.sample.rich.CalendarTestApplet</mainClass>
+    <jbundlePackageExport>!org.jbundle.util.calendarpanel.model,${jbundlePackageFilter};version=${project.version}</jbundlePackageExport> <!-- Bundle package to export -->
   </properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.jbundle.util.calendarpanel</groupId>
+      <artifactId>org.jbundle.util.calendarpanel.model</artifactId>
+      <version>1.1.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+    
   <distributionManagement>
     <site>
       <id>jbundle.org</id>

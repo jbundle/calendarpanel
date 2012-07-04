@@ -28,6 +28,7 @@
   </scm>
 
   <modules>
+    <module>model</module>
     <module>calendarpanel</module>
     <module>sample</module>
   </modules>
