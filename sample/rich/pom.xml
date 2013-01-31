@@ -13,7 +13,7 @@
   <name>jbundle-util-calendarpanel-sample-rich</name>
   <packaging>bundle</packaging>
   <properties>
-    <mainClass>${jbundlePackage}.CalendarTestApplet</mainClass>
+    <mainClass>${jbundle-package}.CalendarTestApplet</mainClass>
   </properties>
 
   <build>

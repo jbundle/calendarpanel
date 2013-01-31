@@ -15,7 +15,7 @@
   <name>jbundle-util-calendarpanel - Calendar panel</name>
   
   <properties>
-    <jbundlePackageExport>!org.jbundle.util.calendarpanel.model,${jbundlePackageFilter};version=${project.version}</jbundlePackageExport> <!-- Bundle package to export -->
+    <jbundle-package-export>!org.jbundle.util.calendarpanel.model,${jbundle-package-filter};version=${project.version}</jbundle-package-export> <!-- Bundle package to export -->
   </properties>
 
   <dependencies>
