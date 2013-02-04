@@ -23,8 +23,8 @@
 
   <scm>
     <url>https://github.com/jbundle/calendarpanel</url>
-    <connection>scm:git:git://github.com/jbundle/calendarpanel.git</connection>
-    <developerConnection>scm:git:git@github.com:jbundle/calendarpanel.git</developerConnection>
+    <connection>scm:git:git://github.com/jbundle/calendarpanel</connection>
+    <developerConnection>scm:git:git@github.com:jbundle/calendarpanel</developerConnection>
   </scm>
 
   <modules>
