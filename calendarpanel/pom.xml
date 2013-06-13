@@ -17,7 +17,13 @@
   <properties>
     <jbundle-package-export>!org.jbundle.util.calendarpanel.model,${jbundle-package-filter};version=${project.version}</jbundle-package-export> <!-- Bundle package to export -->
   </properties>
-
+  
+  <scm>
+    <url>https://github.com/jbundle/calendarpanel</url>
+    <connection>scm:git:git://github.com/jbundle/calendarpanel</connection>
+    <developerConnection>scm:git:git@github.com:jbundle/calendarpanel</developerConnection>
+  </scm>
+  
   <dependencies>
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
