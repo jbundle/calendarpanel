@@ -35,7 +35,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>webstart-maven-plugin</artifactId>
-        <version>1.0-beta-3</version> <!-- TODO I don't know why this doesn't use the default version in parent pom -->
+        <version>1.0-beta-7</version> <!-- TODO I don't know why this doesn't use the default version in parent pom -->
         <executions>
           <execution>
             <phase>process-resources</phase>
@@ -74,7 +74,9 @@
             </jnlpFile>
 
           </jnlpFiles>
-          <pack200>true</pack200>
+          <pack200>
+            <enabled>true</enabled>
+          </pack200>
           <gzip>true</gzip>
           <outputDirectoryName>docs</outputDirectoryName>
         </configuration>
