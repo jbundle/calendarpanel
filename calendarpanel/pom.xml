@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jbundle.util.calendarpanel</groupId>
     <artifactId>jbundle-util-calendarpanel-project</artifactId>
-    <version>1.1.6-SNAPSHOT</version>
+    <version>1.1.6</version>
   </parent>
 
   <!-- This module is stand-alone and has 1 dependencies - The parent POMs are only for deployment, etc. -->
@@ -22,13 +22,14 @@
     <url>https://github.com/jbundle/calendarpanel</url>
     <connection>scm:git:https://github.com/jbundle/calendarpanel</connection>
     <developerConnection>scm:git:https://github.com/jbundle/calendarpanel</developerConnection>
+    <tag>jbundle-util-calendarpanel-project-1.1.6</tag>
   </scm>
   
   <dependencies>
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel.model</artifactId>
-      <version>1.1.6-SNAPSHOT</version>
+      <version>1.1.6</version>
     </dependency>
   </dependencies>
     

@@ -12,7 +12,7 @@
 
   <groupId>org.jbundle.util.calendarpanel</groupId>
   <artifactId>jbundle-util-calendarpanel-project</artifactId>
-  <version>1.1.6-SNAPSHOT</version>
+  <version>1.1.6</version>
 
   <packaging>pom</packaging>
   <name>jbundle-util-calendarpanel-root - project</name>
@@ -25,6 +25,7 @@
     <url>https://github.com/jbundle/calendarpanel</url>
     <connection>scm:git:https://github.com/jbundle/calendarpanel</connection>
     <developerConnection>scm:git:https://github.com/jbundle/calendarpanel</developerConnection>
+    <tag>jbundle-util-calendarpanel-project-1.1.6</tag>
   </scm>
 
   <modules>
