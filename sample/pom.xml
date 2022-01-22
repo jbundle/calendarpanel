@@ -16,7 +16,7 @@
   <modules>
     <module>simple</module>
     <module>rich</module>
-    <module>jnlp</module>
+    <!-- module>jnlp</module -->
   </modules>
 
 </project>
