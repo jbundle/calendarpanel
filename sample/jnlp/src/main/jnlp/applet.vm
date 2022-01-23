@@ -11,7 +11,7 @@
     <offline-allowed/>
   </information>
   <resources>
-    <java version="1.6+"/>
+    <java version="1.8+"/>
 	${dependencies}
   </resources>
 	  <application-desc main-class="${mainClass}"></application-desc>
